@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#43515f"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:elevation="5dp"
+        android:gravity="end|center_vertical"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp"
+        android:textAlignment="gravity"
+        android:textColor="#f5f5f1"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="5 + 10" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#2b343d"
+        android:baselineAligned="false"
+        android:isScrollContainer="false"
+        android:orientation="horizontal"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResult">
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="10dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button33"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_seven" />
+
+                <Button
+                    android:id="@+id/button32"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_eight" />
+
+                <Button
+                    android:id="@+id/button27"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_nine" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button34"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_four" />
+
+                <Button
+                    android:id="@+id/button28"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_five" />
+
+                <Button
+                    android:id="@+id/button40"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_six" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button35"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_one" />
+
+                <Button
+                    android:id="@+id/button37"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_two" />
+
+                <Button
+                    android:id="@+id/button38"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_three" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/button43"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_zero" />
+
+                <Button
+                    android:id="@+id/button42"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_dot" />
+
+                <Button
+                    android:id="@+id/button36"
+                    style="@style/Button"
+                    android:onClick="onButtonClick"
+                    android:text="@string/btn_equal" />
+
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:baselineAligned="false"
+            android:isScrollContainer="false"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button"
+                style="@style/ButtonOperation"
+                android:onClick="onButtonClick"
+                android:text="@string/btn_clean" />
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonOperation"
+                android:onClick="onButtonClick"
+                android:text="@string/btn_divide" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonOperation"
+                android:onClick="onButtonClick"
+                android:text="@string/btn_multiply" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonOperation"
+                android:onClick="onButtonClick"
+                android:text="@string/btn_minus" />
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonOperation"
+                android:onClick="onButtonClick"
+                android:text="@string/btn_plus" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
